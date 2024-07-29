@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>find the numper is a perfect squre</h1>
+    <input  type="text"  id="hjk" placeholder="enter the numper">
+    <button onclick="send()">send</button>
+    <h1 id="show"></h1>
+    <script>
+
+        function send(){
+        var inp=document.getElementById("hjk");
+
+        function send2(num){
+            if(num<0){
+                alert("negative numper can not be perfect squre");
+                return false
+            }
+            const sqrts=Math.sqrt(num)
+            return Number.isInteger(sqrts)
+            
+
+        }
+         
+     var c= send2(Number(inp.value))
+
+     if(c==true){
+        alert(inp.value+" : " +" is perfect squre numper");
+     }
+     else{
+        alert(inp.value+" : "+" is not a perfect  squre numper");
+     }
+        
+
+        }
+    </script>
+    
+</body>
+</html>
